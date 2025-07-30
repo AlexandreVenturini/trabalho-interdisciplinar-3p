@@ -2,7 +2,7 @@ import type { ReactNode } from "react"
 import Botao from "../Button"
 import Etiqueta from "../Etiqueta"
 import { X, Calendar, Star, Heart } from "lucide-react"
-import type { Jogo } from "../../models/Jogo"
+import { Jogo } from "../../models/Jogo"
 import estilos from "./ModalJogo.module.css"
 
 interface PropriedadesModalJogo {
@@ -87,8 +87,8 @@ export default function ModalJogo({
             <p className={estilos.labelSecao}>Plataformas</p>
             <div className={estilos.etiquetas}>
               {jogo.platforms.map((plataforma) => (
-                <Etiqueta key={plataforma.platform.id} tipo="contorno">
-                  {plataforma.platform.name}
+                <Etiqueta key={plataforma.id} tipo="contorno">
+                  {plataforma.name}
                 </Etiqueta>
               ))}
             </div>

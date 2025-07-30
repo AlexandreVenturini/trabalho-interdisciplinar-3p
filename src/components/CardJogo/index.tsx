@@ -1,9 +1,7 @@
-"use client"
-
 import type { ReactNode } from "react"
 import Botao from "../Button"
 import { Heart } from "lucide-react"
-import type { Jogo } from "../../models/Jogo"
+import { Jogo } from "../../models/Jogo"
 import estilos from "./CartaoJogo.module.css"
 
 interface PropriedadesCartaoJogo {

@@ -1,7 +1,4 @@
-"use client"
-
 import type React from "react"
-
 import estilos from "./CampoEntrada.module.css"
 
 interface PropriedadesCampoEntrada {

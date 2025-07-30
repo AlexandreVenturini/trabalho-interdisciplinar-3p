@@ -12,6 +12,7 @@ export default function Cabecalho() {
     { caminho: "/", rotulo: "Início" },
     { caminho: "/biblioteca", rotulo: "Biblioteca" },
     { caminho: "/favoritos", rotulo: "Favoritos" },
+    { caminho: "/indie", rotulo: "Jogos Indie" },
     { caminho: "/sobre", rotulo: "Sobre" },
   ]
 

@@ -5,7 +5,7 @@ import CartaoJogo from "../../components/CardJogo";
 import ModalJogo from "../../components/ModalJogo";
 import Etiqueta from "../../components/Etiqueta";
 import { Heart, Trash2 } from "lucide-react";
-import type { Jogo } from "../../models/Jogo";
+import { Jogo } from "../../models/Jogo";
 import estilos from "./PaginaFavoritos.module.css";
 
 import { buscarFavoritos, removerFavorito, buscarJogosPorIds } from "../../services/favoritos";

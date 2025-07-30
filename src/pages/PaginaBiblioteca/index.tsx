@@ -7,7 +7,8 @@ import CartaoJogo from "../../components/CardJogo"
 import ModalJogo from "../../components/ModalJogo"
 import CampoEntrada from "../../components/CampoEntrada"
 import { Search, X } from "lucide-react"
-import type { Jogo } from "../../models/Jogo"
+import { Jogo } from "../../models/Jogo"
+import { ControladorJogo } from "../../controllers/ControladorJogo"
 import estilos from "./PaginaBiblioteca.module.css"
 
 export default function PaginaBiblioteca() {
@@ -17,6 +18,8 @@ export default function PaginaBiblioteca() {
   const [jogoSelecionado, setJogoSelecionado] = useState<Jogo | null>(null)
   const [favoritos, setFavoritos] = useState<number[]>([])
   const [buscaFeita, setBuscaFeita] = useState(false)
+
+  const controlador = new ControladorJogo()
 
   useEffect(() => {
     const carregarPopulares = async () => {
@@ -41,8 +44,10 @@ export default function PaginaBiblioteca() {
     setCarregando(true)
     setBuscaFeita(false)
     try {
-      const resultados = await buscarJogosPorNome(termoBusca)
-      setJogos(resultados)
+      const resultados: Jogo[] = await buscarJogosPorNome(termoBusca)
+      const filtrados: Jogo[] = controlador.pesquisarEmColecao(resultados, termoBusca)
+      setJogos(filtrados)
+
       setBuscaFeita(true)
     } catch (error) {
       console.error("Erro ao buscar jogos:", error)

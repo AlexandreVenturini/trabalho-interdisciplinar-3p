@@ -6,6 +6,7 @@ import PaginaSobre from "./pages/PaginaSobre"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import PaginaErro404 from "./pages/PaginaErro404"
+import PaginaIndie from "./pages/PaginaIndie"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/favoritos" element={<PaginaFavoritos />} />
             <Route path="/sobre" element={<PaginaSobre />} />
             <Route path="*" element={<PaginaErro404 />} />
+            <Route path="/indie" element={<PaginaIndie />} />
           </Routes>
         </main>
       </div>

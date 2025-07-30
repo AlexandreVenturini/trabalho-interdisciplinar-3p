@@ -1,0 +1,70 @@
+.pagina {
+    background: linear-gradient(135deg, #0f172a 0%, #581c87 50%, #0f172a 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    background: #0f172a;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.titulo {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+input {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 0.75rem;
+    background-color: #9333ea;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #7e22ce;
+}
+
+.lista {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+    color: white;
+}
+
+.item {
+    margin-bottom: 1rem;
+    background: #1e293b;
+    padding: 0.75rem;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
