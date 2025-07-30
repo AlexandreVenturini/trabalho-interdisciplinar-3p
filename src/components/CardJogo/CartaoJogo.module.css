@@ -1,0 +1,85 @@
+.cartao {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.cartao:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.conteudo {
+  padding: 0;
+}
+
+.containerImagem {
+  position: relative;
+}
+
+.imagem {
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 50%, transparent 100%);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.informacoes {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+}
+
+.titulo {
+  color: white;
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.acoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.botaoFavorito {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out;
+}
+
+.botaoFavorito:hover {
+  color: #ef4444;
+}
+
+.favorito {
+  color: #ef4444;
+}
+
+.iconeFavorito {
+  width: 1rem;
+  height: 1rem;
+}
+
+.preenchido {
+  fill: currentColor;
+}

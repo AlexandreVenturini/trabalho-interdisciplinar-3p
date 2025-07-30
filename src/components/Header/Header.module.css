@@ -1,0 +1,106 @@
+.cabecalho {
+  background: linear-gradient(rgb(76, 0, 255), rgba(111, 0, 255, 0.8));
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.navegacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logoImagem {
+  width: 40px;
+  height: auto;
+  object-fit: contain;
+}
+
+.textoLogo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.menuDesktop {
+  display: none;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.linkMenu {
+  color: white;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out;
+}
+
+.linkMenu:hover {
+  color: #a855f7;
+}
+
+.linkAtivo {
+  color: #cb94ff;
+  font-weight: 600;
+  padding-top: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #994bff;
+  border-radius: 15px;
+}
+
+.botaoMenu {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: block;
+}
+
+.iconeMenu {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.menuMobile {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.9);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.linkMobile {
+  color: white;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out;
+}
+
+.linkMobile:hover {
+  color: #a855f7;
+}
+
+@media (min-width: 768px) {
+  .menuDesktop {
+    display: flex;
+  }
+
+  .botaoMenu {
+    display: none;
+  }
+}

@@ -1,0 +1,18 @@
+.rodape {
+  background: linear-gradient(rgb(76, 0, 255), rgba(111, 0, 255, 0.8));
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.conteudo {
+  text-align: center;
+  color: #ffffff;
+  padding: 2rem 0;
+}

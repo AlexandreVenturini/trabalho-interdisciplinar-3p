@@ -1,0 +1,24 @@
+.etiqueta {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.125rem 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  border: 1px solid transparent;
+}
+
+.primario {
+  background: #7c3aed;
+  color: white;
+}
+
+.secundario {
+  background: rgba(124, 58, 237, 0.2);
+  color: #c4b5fd;
+}
+
+.contorno {
+  border-color: #6b7280;
+  color: #d1d5db;
+}

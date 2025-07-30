@@ -1,0 +1,184 @@
+.pagina {
+  background: linear-gradient(135deg, #0f172a 0%, #581c87 50%, #0f172a 100%);
+  min-height: 100vh;
+}
+
+.principal {
+  padding: 3rem 0;
+}
+
+.container {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.perfil {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.avatar {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #a855f7 0%, #9333ea 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.iconeAvatar {
+  width: 4rem;
+  height: 4rem;
+  color: white;
+}
+
+.titulo {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.descricao {
+  font-size: 1.25rem;
+  color: #d1d5db;
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.informacoes {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.secaoInfo {
+  padding: 1.5rem;
+}
+
+.cabecalhoSecao {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.iconeSecao {
+  width: 2rem;
+  height: 2rem;
+  color: #a855f7;
+}
+
+.tituloSecao {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+.textoSecao {
+  color: #d1d5db;
+  line-height: 1.625;
+}
+
+.listaTecnologias {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #d1d5db;
+}
+
+.destaque {
+  color: #a855f7;
+}
+
+.projeto {
+  padding: 1.5rem;
+}
+
+.tituloProjeto {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.descricaoProjeto {
+  color: #d1d5db;
+  line-height: 1.625;
+  margin-bottom: 1rem;
+}
+
+.listaCaracteristicas {
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #d1d5db;
+}
+
+.listaCaracteristicas li {
+  list-style: none;
+  position: relative;
+}
+
+.listaCaracteristicas li::before {
+  content: "•";
+  color: #a855f7;
+  font-weight: bold;
+  position: absolute;
+  left: -1rem;
+}
+
+.contato {
+  text-align: center;
+}
+
+.tituloContato {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.linksContato {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.linkGithub {
+  background: #1f2937;
+  border-radius: 0.375rem;
+}
+
+.linkLinkedin {
+  background: #1e40af;
+  border-radius: 0.375rem;
+}
+
+.iconeLink {
+  color: white;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+.conexoes {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .informacoes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .linksContato {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
